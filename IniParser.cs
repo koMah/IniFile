@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace YourNamespace
 {
-        public class IniFile
+        public class IniParser
         {
             private readonly IDictionary<string, IniSection> _sections;
 
