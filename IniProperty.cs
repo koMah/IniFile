@@ -10,7 +10,6 @@ namespace WpfApplication2{
 
         public class IniProperty
         {
-
             /// <summary>
             /// Property name (key).
             /// </summary>
@@ -26,12 +25,10 @@ namespace WpfApplication2{
             /// </summary>
             public string Comment { get; set; }
 
-
             /// <summary>
             /// Check if property have multi values.
             /// </summary>
             public bool IsMulti = false;
-
 
             public void Reset()
             {
