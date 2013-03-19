@@ -34,7 +34,7 @@ namespace YourNamespace
             /// <summary>
             /// Create a new IniFile instance.
             /// </summary>
-            public IniFile()
+            public IniParser()
             {
                 _sections = new Dictionary<string, IniSection>();
                 CommentChar = ';';
@@ -44,7 +44,7 @@ namespace YourNamespace
             /// Load an INI file from the file system.
             /// </summary>
             /// <param name="path">Path to the INI file.</param>
-            public IniFile(string path)
+            public IniParser(string path)
                 : this()
             {
                 Load(path);
@@ -54,7 +54,7 @@ namespace YourNamespace
             /// Load an INI file.
             /// </summary>
             /// <param name="reader">A TextReader instance.</param>
-            public IniFile(TextReader reader)
+            public IniParser(TextReader reader)
                 : this()
             {
                 Load(reader);
